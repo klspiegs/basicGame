@@ -9,10 +9,37 @@
                 border-width: 5px;
                 border-color: rgb(0,0,0);
             }
+        </style>
+        
+        <script type="text/processing" data-processing-target="mycanvas">
+            /* @pjs globalKeyEvents="true"; */  
+            //dimensions
+            var CANVAS_HEIGHT = 500;
+            var CANVAS_WIDTH = 700;
+            
+          void setup() {
+                size(CANVAS_WIDTH,CANVAS_HEIGHT);
+                background(red);
+            }
+            
+         void draw(){
+                //controls which page is being displayed
+                //state.show();       
+                //global variable drawCount
+                //if (drawCount >= 1000) {
+                //    drawCount = 1;
+                //} else {
+                //    drawCount++;
+               // }
+            }
+   
+  
 
+
+    
+        </script>
     </head>
-    
-    
+   
     <body>
         <!--<canvas id="creators"></canvas>-->
         <canvas id="mycanvas"> </canvas>
