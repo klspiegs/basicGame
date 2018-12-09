@@ -18,14 +18,25 @@
             //dimensions
             var CANVAS_HEIGHT = 500;
             var CANVAS_WIDTH = 700;
-            color red = color(178,18,18);
+            PImage b;
+            color orange = color(255,83, 13);
+            color blue = color(9, 113, 178);
+            color pink = color(255, 182, 193);
+            color yellow = color(239, 255, 0);
+            color green = color(34, 228, 66);
+            color purple = color(204, 102, 255);
+            //PImage test = loadImage("lib/pic.png);
             
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
                 background(red);
+                b = loadImage("res/approach slide 1.png");
             }
             
+          var scene_counter = 0;
+            
          void draw(){
+         //test
                 //controls which page is being displayed
                 //state.show();       
                 //global variable drawCount
@@ -35,11 +46,39 @@
                 //    drawCount++;
                // }
             }
+            
+        void keyPressed(){
+        
+              if (keyCode == 39 && scene_counter== 0) {
+                    image(b, 0, 0);
+                    scene_counter +=;
+                    
+               } else if (keyCode == 39 && scene_counter == 1) {
+
+                    scene_counter +=;
+                    
+               } else if (keyCode == 39 && scene_counter== 2) {
+                
+                    scene_counter +=;
+                    
+               } else if (keyCode == 39 && scene_counter== 3) {
+               
+                    scene_counter +=;
+               
+               } else if (keyCode == 37 && scene_counter== 4) {
+               
+                    //FAIL IMAGE
+               
+               } else if (keyCode == 39 && scene_counter== 4) {
+               
+                    //SUCCEED IMAGE
+               
+               }
+               
+
+                
+        }
    
-  
-
-
-    
         </script>
     </head>
    
